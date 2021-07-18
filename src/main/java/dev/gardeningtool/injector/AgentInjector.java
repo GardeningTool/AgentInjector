@@ -1,4 +1,4 @@
-package dev.gardeningtool.agentinjector;
+package dev.gardeningtool.injector;
 
 import com.sun.tools.attach.AgentInitializationException;
 import com.sun.tools.attach.AgentLoadException;
