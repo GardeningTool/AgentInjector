@@ -2,3 +2,4 @@
 *.mf
 target/
 out/
+.idea/
