@@ -5,7 +5,6 @@ import com.sun.tools.attach.AgentLoadException;
 import com.sun.tools.attach.AttachNotSupportedException;
 import com.sun.tools.attach.VirtualMachine;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -40,8 +39,7 @@ public class AgentInjector {
     }
 
     private void loadAttachDll() {
-        File file = new File("");
-        System.setProperty("java.library.path", file.getAbsolutePath());
+        System.setProperty("java.library.path", System.getProperty("user.dir"));
         System.loadLibrary("attach");
     }
 
